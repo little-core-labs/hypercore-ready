@@ -17,6 +17,7 @@ const ready = require('hypercore-ready')
 ready(...hypercores, (err) => {
   // called when all hypercores are ready
 })
+```
 
 ## API
 
