@@ -12,12 +12,12 @@ function ready(...hypercores) {
   let pending = 0
   let total = 0
 
-  if (Array.isArray(hypercores[0])) {
+  if (Symbol.iterator in hypercores[0]) {
     if ('function' === typeof hypercores[1]) {
       callback = hypercores[1]
     }
 
-    hypercores = hypercores[0]
+    hypercores = Array.from(hypercores[0])
   }
 
   for (const hypercore of hypercores) {
