@@ -1,6 +1,6 @@
 {
   "name": "hypercore-ready",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Wait for 1 more or more hypercores to be ready.",
   "main": "index.js",
   "scripts": {
